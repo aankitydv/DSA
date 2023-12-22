@@ -1,5 +1,5 @@
 
-<!-- saved from url=(0065)http://127.0.0.1:5500/.vscode/WEB%20TECHNOLOGIES%20-%20LOGIN.HTML -->
+<!-- saved from url=(0065)http://127.0.0.1:5500/.vscode/B%20TECHNOLOGIES%20-%20LOGIN.HTML -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login page</title>
     </head>
@@ -7,7 +7,7 @@
 <center>
         <font face="Arial Black" size="4"><u><b>LOGIN FORM</b></u></font>
         <br><br>
-        <form name="f1" action="http://127.0.0.1:5500/.vscode/WEB%20TECHNOLOGIES%20-%20LOGIN.HTML" method="post">
+        <form name="f1" action="http://127.0.0.1:5500/.vscode/B%20TECHNOLOGIES%20-%20LOGIN.HTML" method="post">
         <table frame="box" cellspacing="10">
           <tbody><tr>
             <td>Login</td>
@@ -28,7 +28,7 @@
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
+	if ('bSocket' in window) {
 		(function () {
 			function refreshCSS() {
 				var sheets = [].slice.call(document.getElementsByTagName("link"));
@@ -38,7 +38,7 @@
 					var parent = elem.parentElement || head;
 					parent.removeChild(elem);
 					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLorCase() == "stylesheet") {
 						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
 						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
 					}
@@ -47,7 +47,7 @@
 			}
 			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
 			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
+			var socket = new bSocket(address);
 			socket.onmessage = function (msg) {
 				if (msg.data == 'reload') window.location.reload();
 				else if (msg.data == 'refreshcss') refreshCSS();
@@ -59,7 +59,7 @@
 		})();
 	}
 	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		console.error('Upgrade your browser. This Browser is NOT supported bSocket for Live-Reloading.');
 	}
 	// ]]>
 </script>
